@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Pseudo Class Selectors</title> 
+    <style> 
+        /*::first-letter-style the first letter of a paragraph*/         p::first-letter{             font-size:  200%;             font-weight: bold;             color: darkred; 
+        } 
+        /*::first-line -style the first line of a paragraph*/         p::first-line{             font-style: italic;             color: green; 
+        } 
+        /*:: before- insert content before an element*/         h2::before{             content: "   "; 
+        color: aquamarine;        } 
+    /* ::after-insert content after an element*/     h2::after{         content: " ";         color: orange;  } 
+         /* ::selection- style selected text*/ 
+        ::selection{             background-color: bisque;             color: chartreuse; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>Pseudo-Element Selectors Demo</h1> 
+    <h4>24B11CS276</h4> 
+    <h2>CSS Magic</h2> 
+    <p> This paragraph demonstrates the use of pseudo-elments.  
+        The first letter is styled big and red, the first line is italic, and selecting text will highlight in yellow</p> </body> 
+</html> 
